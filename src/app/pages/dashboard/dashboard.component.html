@@ -1,0 +1,90 @@
+<app-header></app-header>
+
+<mat-sidenav-container class="dashboard-container">
+    <mat-sidenav class="sidebar" mode="side" opened>
+        <app-sidebar></app-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <div class="content">
+            <mat-card class="welcome-card">
+                <mat-card-header>
+                    <mat-card-title>Dashboard</mat-card-title>
+                    <mat-card-subtitle>Welcome to Admin Dashboard</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>Here's a summary of your dashboard data and metrics.</p>
+                </mat-card-content>
+            </mat-card>
+
+            <div class="stats-grid">
+                <mat-card class="stat-card">
+                    <mat-card-header>
+                        <mat-card-title>Total Users</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="stat-value">1,234</div>
+                        <p class="stat-label">Active users</p>
+                    </mat-card-content>
+                </mat-card>
+
+                <mat-card class="stat-card">
+                    <mat-card-header>
+                        <mat-card-title>Revenue</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="stat-value">$45,678</div>
+                        <p class="stat-label">This month</p>
+                    </mat-card-content>
+                </mat-card>
+
+                <mat-card class="stat-card">
+                    <mat-card-header>
+                        <mat-card-title>Orders</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="stat-value">567</div>
+                        <p class="stat-label">New orders</p>
+                    </mat-card-content>
+                </mat-card>
+
+                <mat-card class="stat-card">
+                    <mat-card-header>
+                        <mat-card-title>Growth</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <div class="stat-value">+23%</div>
+                        <p class="stat-label">Year over year</p>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+
+            <mat-card class="data-card">
+                <mat-card-header>
+                    <mat-card-title>Recent Activity</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <mat-list>
+                        <mat-list-item>
+                            <mat-icon matListItemIcon color="primary">check_circle</mat-icon>
+                            <div matListItemTitle>User registration completed</div>
+                            <div matListItemLine>5 minutes ago</div>
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <mat-icon matListItemIcon color="accent">shopping_cart</mat-icon>
+                            <div matListItemTitle>New order received</div>
+                            <div matListItemLine>15 minutes ago</div>
+                        </mat-list-item>
+                        <mat-divider></mat-divider>
+                        <mat-list-item>
+                            <mat-icon matListItemIcon color="warn">info</mat-icon>
+                            <div matListItemTitle>System update scheduled</div>
+                            <div matListItemLine>1 hour ago</div>
+                        </mat-list-item>
+                    </mat-list>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
